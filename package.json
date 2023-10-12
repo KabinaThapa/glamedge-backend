@@ -4,11 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    
+      "start-servers": "concurrently \"json-server --watch category.json --port 4001\" \"json-server --watch sub.json --port 4002\" \"json-server --watch products.json --port 4003\""
+    
+    
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "json-server": "^0.17.4"
+},
+  "devDependencies": {
+    "concurrently": "^8.2.1"
   }
 }
