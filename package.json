@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     
-      "start-servers": "concurrently \"json-server --watch category.json --port 3001\" \"json-server --watch subcategory.json --port 3002\" \"json-server --watch products.json --port 3003\""
+      "start-servers": "concurrently \"json-server --watch category.json --port 3000\" \"json-server --watch subcategory.json --port 3001\" \"json-server --watch products.json --port 3002\""
     
     
   },
